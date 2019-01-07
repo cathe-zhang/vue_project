@@ -1,29 +1,16 @@
-# vue_project
+### vue project log
 
-## Project setup
-```
-npm install
-```
+- v-if  条件语句
+- v-for 循环语句
+- v-model 双向数据绑定
+- @click  事件绑定
+- computed 计算属性
+- 动态样式 
+- mock数据 vue.config.js
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> 子组件最好不要更改数据，通知父组件是好的选择
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+computed和watch的区别
+- computed返回一个新的属性，根据data或props中属性的变化而变化
+- watch则是监听值的变化，例如在某个值变化之后请求后台接口
