@@ -73,7 +73,7 @@
         text: '购物车',
         showText: false,
         goodsList: [],  // 商品列表
-        cartList: [],  // 购物车列表
+        cartList: JSON.parse(localStorage.getItem('cartList')),  // 购物车列表
       }
     },
 
@@ -153,6 +153,20 @@
         })
         return num.toFixed(2)
       } 
+    },
+
+    watch: {
+      // 监听属性变化 
+      cartList: {
+        // 发生变化时执行的函数
+        handler(n, o){
+          console.log(n)
+          console.log(o)
+          localStorage.setItem('cartList', JSON.stringify(n))
+        },
+        // 深层监听，如对象的属性发生变化也执行该函数
+        deep: true
+      }
     },
 
     // 组件创建完毕
