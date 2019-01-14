@@ -1,22 +1,27 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <form-test>
+      
+    </form-test>
+    <grammar />
     
-    <!-- <Cart /> -->
   </div>
 </template>
 
 <script>
-
-import cellerchanModal from './../node_modules/cellerchan-modal/bundle.js';
-import Cart from './components/Cart'
-
-console.log(cellerchanModal)
+import HelloWorld from './components/HelloWorld.vue'
+import FormTest from './components/FormTest.vue'
+import Grammar from './components/Grammar.vue'
 
 export default {
   name: 'app',
+  methods: {
+    
+  },
   components: {
-    // Cart
+    HelloWorld,
+    FormTest,
+    Grammar
   }
 }
 </script>

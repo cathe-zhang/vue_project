@@ -20,6 +20,28 @@ module.exports = {
               },
             ]
           })
+        }),
+        app.get('/api/goodsList', function(req, res){
+          res.json({
+            code: 0,
+            data: [
+              {
+                id: 1,
+                name: '布娃娃',
+                price: '9.99'
+              },
+              {
+                id: 2,
+                name: '猪猪侠',
+                price: '19.20'
+              },
+              {
+                id: 3,
+                name: '竹二郎',
+                price: '39.12'
+              }
+            ]
+          })
         })
       }
     }
